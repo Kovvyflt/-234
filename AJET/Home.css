@@ -1,0 +1,558 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Playfair', sans-serif;
+}
+.body{
+    background-image: url(jumbotron.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    animation: change  infinite ease-in-out;
+    animation-duration: 40s;
+    animation-delay: 6s;
+}
+
+@keyframes change {
+    0%{
+        background-image: url(jumbotron.jpg) ;
+    }
+    
+    20%{
+        background-image: url(nature1.jpg) ;
+    }
+
+    40%{
+        background-image: url(photo.jpg) ;
+    }
+
+    60%{
+        background-image: url(city1.jpg) ;
+    }
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+}
+.logo{
+    letter-spacing: 5px;
+    width: 70px;
+    font-size: 12px;
+}
+.logo-p{
+    font-size: 12px;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar-ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+    margin-right: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.navbar-li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar-li a:hover{
+    color: #ae9f6a;
+}
+
+.active a{
+    color: #ae9f6a;
+}
+
+.toggle-btn{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    top: .75rem;
+    right: 1rem;
+    margin-top: 15px;
+}
+.toggle-btn .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.hero{
+    width: 50%;
+    height: 400px;
+    margin: auto;
+    margin-top: 70px;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-f1{
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-family: Montserrat;
+
+}
+.hero-f2{
+    font-size: 28px;
+    font-family: playfair Display;
+    font-weight: lighter;
+   letter-spacing: 2px;
+}
+.hero-f3{
+    font-family: Crimson Text;
+    font-size: 8px;
+    font-style: italic;
+}
+
+.hero-f4{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.hero-btn{
+    width: 125px;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    background-color:rgba(255, 255, 255, 0.9);
+    opacity: 0.8;
+    font-size: 12px;
+    color: black;
+    margin: auto;
+}
+.hero-btn:hover{
+    background-color: #fff;
+    opacity: 1;
+    cursor: pointer;
+}
+.btn-2{
+    background-color: rgba(10, 10, 10, 0.7);
+    color: #fff;
+}
+.btn-2:hover{
+    background-color:rgba(255, 255, 255, 0.9);
+    color: black;
+    cursor: pointer;
+}
+
+.footer {
+    height: 10vh;
+    width: 100%;
+    background-color: #66BB6A;
+}
+
+@media screen and (max-width:920px) and (min-width:780px) {
+
+    .logo{
+        letter-spacing: 5px;
+        width: 70px;
+        font-size: 20px;
+    }
+    .logo-p{
+        font-size: 20px;
+    }
+
+    .navbar-ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 40px;
+        margin-right: 30px;
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    .hero{
+        width: 100%;
+        height: 400px;
+        margin: auto;
+        margin-top: 30%;
+        padding: 50px;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .hero-f1{
+        font-size: 10px;
+        letter-spacing: 3px;
+        font-family: Montserrat;
+        font-size: 18px;
+    
+    }
+    .hero-f2{
+        font-size: 47px;
+        font-family: playfair Display;
+        font-weight: lighter;
+       letter-spacing: 2px;
+    }
+    .hero-f3{
+        font-family: Crimson Text;
+        font-size: 18px;
+        font-style: italic;
+    }
+    
+    .hero-f4{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+    
+    .hero-btn{
+        width: 125px;
+        height: 55px;
+        border: none;
+        border-radius: 30px;
+        background-color:rgba(255, 255, 255, 0.9);
+        opacity: 0.8;
+        font-size: 18px;
+        color: black;
+        margin: auto;
+    }
+
+    
+}
+
+@media screen and (max-width:768px) and (min-width:550px)  {
+    .header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        height: 11vh;
+    }
+    .navbar-ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        background-color: black;
+        margin-top: 10px;
+        opacity: 1;
+        gap: 20px;
+
+    }
+    .navbar-li{
+        width: 100%;
+        border-bottom: 1px solid white;
+        font-size: 24px;
+        padding: 5px;
+        font-family: Montserrat;
+        font-weight: 400px;
+        text-align: left;
+    }
+
+    .navbar-li:last-child{
+        border-bottom: none;
+    }
+    .toggle-btn{
+        display: flex;
+    }
+   
+    .hero{
+        width: 100%;
+        height: 400px;
+        margin: auto;
+        padding: 50px;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .hero-f1{
+        font-size: 10px;
+        letter-spacing: 3px;
+        font-family: Montserrat;
+        font-size: 18px;
+    
+    }
+    .hero-f2{
+        font-size: 30px;
+        font-family: playfair Display;
+        font-weight: lighter;
+       letter-spacing: 2px;
+    }
+    .hero-f3{
+        font-family: Crimson Text;
+        font-size: 18px;
+        font-style: italic;
+    }
+    
+    .hero-f4{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+    
+    .hero-btn{
+        width: 125px;
+        height: 55px;
+        border: none;
+        border-radius: 30px;
+        background-color:rgba(255, 255, 255, 0.9);
+        opacity: 0.8;
+        font-size: 18px;
+        color: black;
+        margin: auto;
+    } 
+}
+
+@media screen and (max-width:540px) and (min-width:490px) {
+    body{
+        overflow: hidden;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        height: 11vh;
+    }
+    .navbar-ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        background-color: black;
+        margin-top: 10px;
+        opacity: 1;
+        gap: 20px;
+
+    }
+    .navbar-li{
+        width: 100%;
+        border-bottom: 1px solid white;
+        font-size: 24px;
+        padding: 5px;
+        font-family: Montserrat;
+        font-weight: 400px;
+        text-align: left;
+    }
+
+    .navbar-li:last-child{
+        border-bottom: none;
+    }
+    .toggle-btn{
+        display: flex;
+    }
+   
+   
+    .hero{
+        width: 100%;
+        height: 400px;
+        /* margin: auto; */
+        padding: 50px;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .hero-f1{
+        font-size: 14px;
+        letter-spacing: 3px;
+        font-family: Montserrat;
+    
+    }
+    .hero-f2{
+        font-size: 25px;
+        font-family: playfair Display;
+        font-weight: lighter;
+       letter-spacing: 2px;
+    }
+    .hero-f3{
+        font-family: Crimson Text;
+        font-size: 14px;
+        font-style: italic;
+    }
+    
+    .hero-f4{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+    
+    .hero-btn{
+        width: 125px;
+        height: 55px;
+        border: none;
+        border-radius: 30px;
+        background-color:rgba(255, 255, 255, 0.9);
+        opacity: 0.8;
+        font-size: 18px;
+        color: black;
+        margin: auto;
+    } 
+
+    
+}
+
+@media screen and (max-width:480px)  {
+    .header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        height: 11vh;
+    }
+    .navbar-ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        background-color: black;
+        margin-top: 10px;
+        opacity: 1;
+        gap: 20px;
+
+    }
+    .navbar-li{
+        width: 100%;
+        border-bottom: 1px solid white;
+        font-size: 24px;
+        padding: 5px;
+        font-family: Montserrat;
+        font-weight: 400px;
+        text-align: left;
+    }
+
+    .navbar-li:last-child{
+        border-bottom: none;
+    }
+    .toggle-btn{
+        display: flex;
+    }
+
+    .hero{
+        width: 100%;
+        height: 400px;
+        margin: auto;
+        margin-top: 15%;
+        padding: 50px;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        overflow: hidden;
+    }
+
+    
+    .hero-f4{
+        display: flex;
+        gap: 50px;
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width:280px) {
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        height: 11vh;
+    }
+    .navbar-ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        background-color: black;
+        display: none;
+        margin-top: 10px;
+        opacity: 1;
+        gap: 20px;
+
+    }
+    .navbar-li{
+        width: 100%;
+        border-bottom: 1px solid white;
+        font-size: 16px;
+        font-family: Montserrat;
+        font-weight: 400px;
+        text-align: left;
+    }
+
+    .navbar-li:last-child{
+        border-bottom: none;
+    }
+    .toggle-btn{
+        display: flex;
+    }
+
+    .hero{
+        width: 100%;
+        height: 400px;
+        margin: auto;
+        margin-top: 70px;
+        padding: 50px;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        overflow: hidden;
+    }
+
+    
+    .hero-f4{
+        display: flex;
+        gap: 50px;
+        margin-left:0px ;
+        margin-top: 30px;
+    }
+
+    .hero-f1{
+        font-size: 10px;
+        letter-spacing: 3px;
+        font-family: Montserrat;
+        font-size: 10px;
+    
+    }
+    .hero-f2{
+        font-size: 10px;
+        font-family: playfair Display;
+        font-weight: lighter;
+       letter-spacing: 2px;
+    }
+    .hero-f3{
+        font-family: Crimson Text;
+        font-size: 10px;
+        font-style: italic;
+    }
+    
+
+
+}
