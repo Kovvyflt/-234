@@ -4,73 +4,87 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: skyblue;
-}
+/* body{
+    background-color: bisque;
+} */
 
-.form{
-    width: 400px;
-    height: 380px;
+.modal{
+    width: 800px;
+    height: 600px;
     margin: auto;
-    margin-top: 12%;
-    background-color: black;
-    opacity: 0.9;
+    padding: 25px;
+    margin-top: 5%;
+    background-color: orange;
     border-radius: 10px;
 }
 
-.insider{
-    padding: 20px;
-    font-size: 24px;
-    color:white;
+.form-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 5px;
 }
 
-.insider input{
-    width: 350px;
+#close{
+    color:#fff;
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.form-img img{
+    width:300px; 
+    height:300px;
+}
+.form-body{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 10px;
+    font-size: 24px;
+}
+.form-body input{
+    width: 250px;
     height: 40px;
     border: none;
-    background-color: red;
-    opacity: 0.8;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    color: white;
-    font-size: 20px;
-}
-
-.insider button{
-    margin-left: 10px;
-    margin-top: 10px;
-    width: 90%;
-    height: 35px;
-    border: none;
     border-radius: 5px;
-    background-color: bisque;
-    font-size: 14px;
-}
-button:hover{
-    background-color: aliceblue;
-}
-
-.link{
-    display: flex;
-    margin-left: 28%;
-}
-
-.link a{
-    color:white;
-    text-decoration: none;
+    text-align: center;
     font-size: 18px;
 }
 
-.link a:hover{
-    color: red;
+.inside-form{
+    display: flex;
+    justify-content: space-between;
 }
-hr{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.form-header{
-    margin-bottom: 10px;
+#total{
+    font-size: 18px;
 }
 
-
+.form-btn{
+    width: 100px;
+    height: 30px;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+}
+.price{
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+}
+.desc{
+    margin-top: 15px;
+    line-height: 25px;
+}
+.desc p{
+    margin-top: 10px;
+}

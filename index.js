@@ -6,12 +6,12 @@ document.querySelector('.header-btn').addEventListener('click',function(e){
 })
 
 
-document.getElementById('close').addEventListener('click',function(){
-    let divOverlay =  document.getElementById('overlay');
+// document.getElementById('close').addEventListener('click',function(){
+//     let divOverlay =  document.getElementById('overlay');
 
-    divOverlay.classList.remove('overlay');
-    document.querySelector('.form').classList.remove('show')
-})
+//     divOverlay.classList.remove('overlay');
+//     document.querySelector('.form').classList.remove('show')
+// })
 
 function myFunction(){
     let username = document.getElementById('username').value;
@@ -26,3 +26,15 @@ function myFunction(){
     //     alert('Please input the write username and password')
     // }
 }
+
+document.querySelector('.gallery').addEventListener('click',function(e){
+    // console.log(e.target.children);
+
+    let props = e.target.children[0];
+
+    let price = props.value
+    let picture = props.name
+    let name = props.id
+    modal(picture,price,name)
+    
+})

@@ -5,33 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="pratice.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Montserrat:ital,wght@0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de21ab9aad.js" crossorigin="anonymous"></script>
+    <script src="pratice.js"></script>
+    <!-- <script src="login.js"></script> -->
+    <script src="modal.js"></script>
+    
 </head>
 <body>
     <div id="overlay">
-        <div class="form">
-            <form action="" class="insider">
-                <div class="form-head">
-                    <h1 class="form-header">LOGIN</h1>
-                    <div id="close">x</div>
-                </div>
-                
-                <section>
-                    Username: <br>
-                    <input type="text" name="Firstname" id="username"> <br>
-                    Password: <br>
-                    <input type="password" name="Password" id="password"> <br>
         
-                    <button onclick="myFunction()">Login</button>
-                </section>
-
-                <div class="link">
-                    <a href="">SignUp</a> <hr>
-                    <a href="">Forgot Password ?</a>
-                </div> 
-            </form>
     
             
-        </div>
     </div>
      <div class="header">
          
@@ -71,24 +59,32 @@
 
         <div class="gallery">
             <div class="gal" >
-                <img src="burger picture.jfif" alt="">
+                <img src="burger_picture.jfif" alt="">
 
                 <h1 class="gal-text">BURGER</h1>
-                <button class="gal-btn">Order Now</button>
+                
+                <button class="gal-btn">
+                    <input type="hidden" value="$4.99" name="burger_picture.jfif" id="Burger"/>
+                    Order Now
+                </button>
             </div>
 
             <div class="gal" >
                 <img src="pizza2.jfif" alt="">
 
                 <h1 class="gal-text">Pizza</h1>
-                <button class="gal-btn" >Order Now</button>
+                <button class="gal-btn" >
+                    <input type="hidden" value="$7.99" name="pizza2.jfif" id="Pizza"/>
+                    Order Now</button>
             </div>
 
             <div class="gal" >
                 <img src="wings.jfif" alt="">
 
                 <h1 class="gal-text">CHICKEN WINGS</h1>
-                <button class="gal-btn">Order Now</button>
+                <button class="gal-btn">
+                    <input type="hidden" value="$12.88" name="wings.jfif" id="Chicken Wings"/>
+                    Order Now</button>
             </div>
 
 
@@ -120,36 +116,58 @@
        
      </div>
 
-     <div class="footer">
-        <div class="footer-logo">
-            <img src="tower.png" alt="">
-        </div>
-
-        <div class="footer-about">
-            <h1>About</h1>
-            <div class="footer-links">
-                <a href="">About Us</a>
-                <a href="">Vision</a>
-                <a href="">Purpose</a>
+     <div class="parent-footer">
+         
+        <div class="footer">
+            <div class="footer-logo">
+                <img src="tower.png" alt="">
             </div>
 
-        </div>
-        <div class="footer-policy">
-            <h1>Policy</h1>
-            <div class="footer-links">
-                <a href="">Privacy policy</a>
-                <a href="">Terms $ Condition</a>
-                <a href="">Responbility</a>
+            <div class="footer-about">
+                <h1>About</h1>
+                <div class="footer-links">
+                    <a href="">About Us</a>
+                    <a href="">Vision</a>
+                    <a href="">Purpose</a>
+                </div>
+
+            </div>
+            <div class="footer-policy">
+                <h1>Policy</h1>
+                <div class="footer-links">
+                    <a href="">Privacy policy</a>
+                    <a href="">Terms $ Condition</a>
+                    <a href="">Responbility</a>
+                </div>
+            </div>
+            <div class="footer-care">
+                <h1>Care Pal</h1>
+                <div class="footer-links">
+                    <a href="">Reach Us</a>
+                    <a href="">Help Grow</a>
+                    <a href="">Donations</a>
+                </div>
             </div>
         </div>
-        <div class="footer-care">
-            <h1>Care Pal</h1>
-            <div class="footer-links">
-                <a href="">Reach Us</a>
-                <a href="">Help Grow</a>
-                <a href="">Donations</a>
+
+        <div class="end">
+            <hr>
+            <div class="end-child">
+                <div class="copyright">
+                    <p>TM & Copyright 2021 Mine Corporation. All Rights Reserved.</p>
+                </div>
+    
+                <div class="socails">
+                    <a href=""><i class="fa-brands fa-facebook fa-2x" ></i></a>
+                    <a href=""><i class="fa-brands fa-twitter fa-2x"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                </div>
             </div>
         </div>
+        
+
+        
      </div>
 <script src="index.js"></script>
 </body>
