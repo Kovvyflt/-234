@@ -14,7 +14,8 @@ toggle.addEventListener('click',function(e){
     
 })
 const reset = document.querySelector('.icon')
-
-reset.addEventListener('click',function(e){
-    window.scrollTo({top: 0, behavior: 'smooth'});
-})
+if(reset){
+    reset.addEventListener('click',function(e){
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    })
+}

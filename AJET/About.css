@@ -75,7 +75,7 @@ body{
 
 .about-info{
     width: 100%;
-    background-image: url(rick2.jpg) ;
+    background-image: url(./Images/rick2.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
     height: 95vh;
@@ -120,7 +120,7 @@ body{
 }
 .about-img{
     width: 100%;
-    background-image: url(Game6.jpg);
+    background-image: url(./Images/Game6.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -219,7 +219,7 @@ body{
 
     .about-info{
         width: 100%;
-        background-image: url(jumbotron.jpg) ;
+        background-image: url(./Images/jumbotron.jpg) ;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -227,7 +227,7 @@ body{
     }
     .about-img{
         width: 100%;
-        background-image: url(rick2.jpg);
+        background-image: url(./Images/rick2.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -339,7 +339,7 @@ body{
 
     .about-info{
         width: 100%;
-        background-image: url(jumbotron.jpg) ;
+        background-image: url(./jumbotron.jpg) ;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -347,7 +347,7 @@ body{
     }
     .about-img{
         width: 100%;
-        background-image: url(rick2.jpg);
+        background-image: url(./Images/rick2.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -454,7 +454,7 @@ body{
 
     .about-info{
         width: 100%;
-        background-image: url(jumbotron.jpg) ;
+        background-image: url(./Images/jumbotron.jpg) ;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -462,7 +462,7 @@ body{
     }
     .about-img{
         width: 100%;
-        background-image: url(rick2.jpg);
+        background-image: url(./Images/rick2.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -575,7 +575,7 @@ body{
 
     .about-info{
         width: 100%;
-        background-image: url(jumbotron.jpg) ;
+        background-image: url(./Images/jumbotron.jpg) ;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -583,7 +583,7 @@ body{
     }
     .about-img{
         width: 100%;
-        background-image: url(rick2.jpg);
+        background-image: url(./Images/rick2.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

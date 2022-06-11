@@ -7,7 +7,7 @@
 
 .body{
     height: 100%;
-    background-image: url(photo3.jpg);
+    background-image: url(./Images/photo3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -239,10 +239,6 @@ hr{
     }
 
     .body{
-        background-image: url(photo3.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        width: auto;
         height: 95%;
     }
 
@@ -370,9 +366,6 @@ hr{
     }
 
     .body{
-        background-image: url(photo3.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
         overflow: hidden;
     }
 
@@ -502,9 +495,6 @@ hr{
     }
 
     .body{
-        background-image: url(photo3.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
         overflow: hidden;
     }
 
